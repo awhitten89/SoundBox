@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg_gradient"
+    tools:context="catdogapp.alan.com.soundbox.MainActivity">
+
+    <ImageView
+        android:id="@+id/artist_Image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/image"/>
+
+    <TextView
+        android:id="@+id/artist_name"
+        android:textSize="15sp"
+        android:textColor="#ffd9d8ea"
+        android:text="Hello"
+        android:textStyle="italic"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_below="@+id/artist_Image"
+        android:background="@drawable/buttons_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/prev_Button"
+            android:background="@android:drawable/ic_media_previous"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/play_Button"
+            android:background="@android:drawable/ic_media_play"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/next_Button"
+            android:background="@android:drawable/ic_media_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+</RelativeLayout>
